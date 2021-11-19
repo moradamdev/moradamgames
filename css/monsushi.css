@@ -226,7 +226,7 @@ p {
     display: none;
   }
   #monsushi-banner {
-    content: url(./images/monsushibanner2.png);
+    content: url(monsushibanner2.png);
     margin-top: 3.65em;
     width: 100%;
     border-bottom: 0.5em solid #00001b;
