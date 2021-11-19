@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #00081b;
+  --text-color: #cecece;
+  --purp-col: #5d335e;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  background: #e2e2e2;
+  margin: 0;
+  position: relative;
+}
+
+.topbar {
+  /* margin: 0em; */
+  /* margin-top: -9.3em; */
+  position: fixed;
+  top: 0%;
+  background: rgba(0, 0, 0, 0.7);
+
+  /* opacity: 80%; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.moradam {
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.logo-img {
+  width: 5em;
+  height: 5em;
+  border-radius: 20px;
+  padding: 0.3em;
+}
+.moradam-text {
+  font-weight: bold;
+  font-size: 3em;
+  margin: 0;
+  padding-top: 0.2em;
+  padding-left: 0.5em;
+}
+
+nav {
+  background: rgb(18, 20, 27);
+  /* color: white; */
+  display: none;
+  font-size: 3em;
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  font-weight: bold;
+  /* padding: 0em; */
+}
+
+nav.menu-btn {
+  display: block;
+}
+.nav-list {
+  list-style: none;
+  display: grid;
+  row-gap: 1em;
+  margin: 3em;
+}
+
+.navlinks {
+  /* margin-top: 4em; */
+  color: grey;
+  text-decoration: none;
+}
+nav.li {
+  text-decoration: none;
+}
+
+.mobile-menu-exit {
+  z-index: 999;
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+.hamburger {
+  margin-top: 0.8em;
+  margin-right: 1em;
+  padding-bottom: 0.8em;
+  width: 2.5em;
+  height: 2em;
+}
+.construction {
+  display: block;
+  margin: auto;
+  margin-top: 7em;
+}
+@media only screen and (min-width: 1000px) {
+  .logo-img {
+    width: 3em;
+    height: 3em;
+    border-radius: 15px;
+    padding: 0.3em;
+  }
+  .moradam-text {
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0;
+    padding-top: 0.3em;
+    padding-left: 0.5em;
+  }
+
+  nav {
+    background: none;
+    display: flex;
+    font-size: 3em;
+    text-align: right;
+    width: 50%;
+    position: fixed;
+    z-index: 0;
+    height: 0em;
+    justify-content: space-between;
+  }
+
+  .nav-list {
+    font-size: 0.8em;
+    list-style: none;
+    display: flex;
+    margin: 0em;
+    margin-top: 0em;
+    right: 0%;
+    text-align: right;
+  }
+
+  .navlinks {
+    text-decoration: none;
+    padding-right: 2em;
+    font-size: 0.7em;
+  }
+  .mobile-menu-exit {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}

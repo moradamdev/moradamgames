@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #00081b;
+  --purple-col: #5d335e;
+  --text-color: #cecece;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000100;
+  margin: 0;
+  position: relative;
+}
+
+.topbar {
+  /* margin: 0em; */
+  /* margin-top: -9.3em; */
+  position: fixed;
+  top: 0%;
+  background: rgba(0, 0, 0, 0.7);
+
+  /* opacity: 80%; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.moradam {
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.logo-img {
+  width: 5em;
+  height: 5em;
+  border-radius: 20px;
+  padding: 0.3em;
+}
+.moradam-text {
+  font-weight: bold;
+  font-size: 3em;
+  margin: 0;
+  padding-top: 0.2em;
+  padding-left: 0.5em;
+}
+
+nav {
+  background: rgb(18, 20, 27);
+  /* color: white; */
+  display: none;
+  font-size: 3em;
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  font-weight: bold;
+  /* padding: 0em; */
+}
+
+nav.menu-btn {
+  display: block;
+}
+.nav-list {
+  list-style: none;
+  display: grid;
+  row-gap: 1em;
+  margin: 3em;
+}
+
+.navlinks {
+  /* margin-top: 4em; */
+  color: grey;
+  text-decoration: none;
+}
+nav.li {
+  text-decoration: none;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+.hamburger {
+  margin-top: 0.8em;
+  margin-right: 1em;
+  padding-bottom: 0.8em;
+  width: 2.5em;
+  height: 2em;
+}
+
+#bg-img {
+  /* filter: blur(4px); */
+  z-index: -1;
+  position: relative;
+  /* position: absolute; */
+  /* margin-top: -9.4em; */
+  /* top: 0%; */
+  width: 100%;
+}
+#welcome {
+  display: none;
+}
+#game-text {
+  font-size: 2.3em;
+  color: var(--text-color);
+  padding-bottom: 0.5em;
+}
+.game-description {
+  padding-bottom: 4em;
+  color: white;
+  width: 25em;
+  padding: 1em;
+  margin: auto;
+  margin-bottom: 3em;
+}
+.games-showcase {
+  background: rgba(18, 20, 27, 0);
+  text-align: center;
+  margin-top: -115vw;
+  /* margin-top: 40vw; */
+  /* padding-top: 6em; */
+}
+.games-img {
+  width: 20em;
+  border-radius: 20px;
+}
+.game-title {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: grey;
+}
+
+.footer {
+  background: url(/Moradam/images/cityBridge.png);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position-y: -1em;
+  color: grey;
+}
+#contact {
+  text-align: center;
+  padding: 1em;
+}
+.contact-me {
+  text-align: center;
+}
+input {
+  background: #333548;
+  color: whitesmoke;
+  border: 6px solid #282a3b;
+  border-top: none;
+  border-left: none;
+}
+input::placeholder {
+  color: whitesmoke;
+  font-size: 1.2em;
+}
+textarea {
+  background: #333548;
+  border: 6px solid #282a3b;
+  border-top: none;
+  border-left: none;
+  resize: none;
+}
+textarea::placeholder {
+  color: whitesmoke;
+  font-size: 1.3em;
+}
+button {
+  background: #333548;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+}
+#twitter {
+  padding: 3em 0 5em 3em;
+}
+#twitter-img {
+  height: 1.3em;
+}
+
+/* Games showcase class to make it a grid in desktop mode */
+
+@media only screen and (min-width: 1000px) {
+  .logo-img {
+    width: 3em;
+    height: 3em;
+    border-radius: 15px;
+    padding: 0.3em;
+  }
+  .moradam-text {
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0;
+    padding-top: 0.3em;
+    padding-left: 0.5em;
+  }
+
+  nav {
+    background: none;
+    display: flex;
+    font-size: 3em;
+    text-align: right;
+    width: 50%;
+    position: fixed;
+    z-index: 0;
+    height: 0em;
+    justify-content: space-between;
+  }
+
+  .nav-list {
+    font-size: 0.8em;
+    list-style: none;
+    display: flex;
+    margin: 0em;
+    margin-top: 0em;
+    right: 0%;
+    text-align: right;
+  }
+
+  .navlinks {
+    text-decoration: none;
+    padding-right: 2em;
+    font-size: 0.7em;
+  }
+  .mobile-menu-exit {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+  .welcome {
+    z-index: -1;
+    display: initial;
+    position: absolute;
+    font-size: 6em;
+    align-items: center;
+    color: white;
+    top: 2em;
+    /* top: 3.5em; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #welcome2 {
+    font-size: 1.5em;
+    top: 11em;
+    text-align: center;
+  }
+
+  #game-text {
+    z-index: -1;
+    position: absolute;
+    top: 60vw;
+    left: 8%;
+  }
+
+  .games-showcase {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    padding-top: 8em;
+  }
+
+  .footer {
+    display: block;
+    margin: auto;
+    /* float: center; */
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    bottom: 0;
+    background-position-y: -25em;
+  }
+  #contact {
+    text-align: left;
+    font-size: 2em;
+  }
+  .contact-me {
+    /* text-align: center; */
+    padding-left: 2em;
+    /* text-align: left; */
+  }
+  input {
+    /* margin-left: -40vw; */
+    float: left;
+    margin-left: 18.5vw;
+  }
+
+  textarea {
+    width: 60vw;
+    height: 30vh;
+  }
+
+  button {
+    margin-right: 18vw;
+    float: right;
+    border: none;
+    padding: 0.5em 1em;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .hero {
+    overflow: hidden;
+  }
+  .games-showcase {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding-top: 8em;
+  }
+
+  .welcome {
+    top: 3em;
+  }
+  #welcome2 {
+    top: 15em;
+  }
+}
