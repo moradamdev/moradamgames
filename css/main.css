@@ -310,6 +310,17 @@ button {
     border: none;
     padding: 0.5em 1em;
   }
+  .down-arrow {
+    z-index: 0;
+    position: absolute;
+    display: flex;
+    bottom: 25px;
+    left: 50vw;
+    margin: auto;
+    animation-name: up-down;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
