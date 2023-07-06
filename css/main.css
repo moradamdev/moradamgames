@@ -314,7 +314,7 @@ button {
     z-index: 0;
     position: absolute;
     display: flex;
-    bottom: 25px;
+    bottom: 25vw;
     left: 50vw;
     margin: auto;
     animation-name: up-down;
