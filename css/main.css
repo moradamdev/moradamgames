@@ -315,7 +315,7 @@ button {
     position: absolute;
     display: flex;
     top: 30em;
-    left: 50vw;
+    left: 50%;
     margin: auto;
     animation-name: up-down;
     animation-duration: 3s;
