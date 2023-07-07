@@ -314,7 +314,8 @@ button {
     z-index: 0;
     position: absolute;
     display: flex;
-    top: 30em;
+     
+    top: 50em;
     left: 50%;
     margin: auto;
     animation-name: up-down;
@@ -334,7 +335,7 @@ button {
   }
   .down-arrow:after {
     content: "";
-    display: inline-block;
+/*     display: inline-block; */
     height: 1em;
     vertical-align: bottom;
   }
