@@ -316,8 +316,8 @@ button {
     display: flex;
      
     top: 50em;
-    left: 50% - 50px;
-/*     left: calc(50% - 50px); */
+/*     left: 50% - 50px; */
+    left: calc(50% - 50px);
     margin: auto;
     animation-name: up-down;
     animation-duration: 3s;
