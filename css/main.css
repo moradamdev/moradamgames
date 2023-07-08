@@ -310,13 +310,33 @@ button {
     border: none;
     padding: 0.5em 1em;
   }
-   .down-arrow {
+   
+}
+
+@media only screen and (min-width: 1400px) {
+  .hero {
+    overflow: hidden;
+  }
+  .games-showcase {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding-top: 8em;
+  }
+
+  .welcome {
+    top: 3em;
+  }
+  #welcome2 {
+    top: 15em;
+  }
+
+  .down-arrow {
     z-index: 0;
     position: absolute;
     display: flex;
      
     top: 50em;
-/*     left: 50% - 50px; */
     left: calc(50% - 50px);
     margin: auto;
     animation-name: up-down;
@@ -339,24 +359,5 @@ button {
 /*     display: inline-block; */
     height: 1em;
     vertical-align: bottom;
-  }
-}
-
-@media only screen and (min-width: 1400px) {
-  .hero {
-    overflow: hidden;
-  }
-  .games-showcase {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center;
-    padding-top: 8em;
-  }
-
-  .welcome {
-    top: 3em;
-  }
-  #welcome2 {
-    top: 15em;
   }
 }
