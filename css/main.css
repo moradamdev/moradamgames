@@ -38,6 +38,10 @@ body {
   color: var(--text-color);
 }
 
+.down-arrow {
+  display: none;
+}
+
 .logo-img {
   width: 5em;
   height: 5em;
